@@ -1,0 +1,79 @@
+div.sheet-character {
+  @import "./components/passions";
+  @import "./components/personality-traits";
+  @import "./components/equipment";
+  @import "./components/characteristics";
+  @import "./components/personal";
+  @import "./components/hit-points";
+  @import "./components/power-points";
+  @import "./components/skills";
+  @import "./components/weapons";
+  @import "./components/hit-locations";
+
+  h2 {
+    text-overflow: ellipsis;
+    width: fit-content;
+  }
+
+  textarea {
+    height: 50px;
+    margin-bottom: 0px;
+  }
+
+  div.sheet-row,
+  div.sheet-col {
+    @extend %gridRowCol;
+  }
+
+  div.sheet-mainheader {
+    grid-auto-flow: column;
+    grid-template-columns: min-content 1fr;
+
+    justify-content: center;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    text-align: center;
+
+    h1 {
+      font-size: xx-large;
+      margin-top: .25em;
+    }
+  }
+
+  div.sheet-personal-data {
+    div.sheet-age {
+      grid-template-columns: 1fr 10% 25%;
+    }
+  }
+
+  div.sheet-character-attributes {
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+
+  div.sheet-skills {
+    grid-template-columns: 1fr;
+  }
+
+  div.sheet-weapons {
+    grid-template-columns: 1fr 
+  }
+
+  div.sheet-hit-locations {
+    grid-template-columns: 1fr 
+  }
+
+  div.sheet-character-body {
+    grid-template-columns: 1.65fr 2fr;
+  }
+
+  span.sheet-character {
+    display: grid;
+    align-content: center;
+  }
+
+  span.sheet-character {
+    display: grid;
+    align-content: center;
+  }
+
+}

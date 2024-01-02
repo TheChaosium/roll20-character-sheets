@@ -1,0 +1,54 @@
+.personal.grid
+    .header
+        h1(data-i18n='personal')
+    .grid.core
+        .col
+            .row.personal_name_player 
+                +brpPersonalText('name')
+                +textInput('name') 
+                +brpPersonalText('player')
+                +textInput('player') 
+
+            .row.personal_culture_gender
+                +brpPersonalText('culture')
+                +textInput('culture') 
+                +brpPersonalText('gender')
+                +textInput('gender') 
+
+            .row.personal_hand_height_weight
+                +brpPersonalText('handedness')
+                +textInput('handedness') 
+                +brpPersonalText('height')
+                +textInput('height') 
+                +brpPersonalText('weight')
+                +textInput('weight') 
+
+            .row.personal_profession_wealth
+                +brpPersonalText('profession')
+                +textInput('profession') 
+                +brpPersonalText('wealth')
+                +textInput('wealth') 
+
+            .row.personal_gods_or_religion
+                +brpPersonalText('gods_or_religion')
+                +textInput('gods_or_religion') 
+
+            .row.personal_features
+                +brpPersonalText('distinctive_features')
+                +textInput('distinctive_features') 
+
+            .row.personal_full_length
+                +textInput('distinctive_features2')
+
+            .row.personal_description
+                +brpPersonalText('description')
+                +textInput('description')
+
+            .row.personal_full_length
+                +textInput('description2') 
+
+            .row.personal_move_age 
+                +brpPersonalText('move')
+                +brpCharacteristicRollValue('movement') 
+                +brpPersonalText('age')
+                +textInput('age')       

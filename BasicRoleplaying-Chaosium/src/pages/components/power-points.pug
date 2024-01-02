@@ -1,0 +1,13 @@
+.power-points.grid
+    .header
+        h1(data-i18n='power points')
+    .grid.core
+        .col
+            .row.power_points
+                +brpPersonalText('power_points_max')
+                +brpCharacteristicRollValue('power_points_max')
+
+            .row.power_points
+                +brpPersonalText('power_points_current')
+                +numberInput('power_points_current')
+

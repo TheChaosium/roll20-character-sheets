@@ -1,0 +1,52 @@
+div.sheet-personal {
+
+  div.sheet-core {
+      grid-auto-flow: column;
+      grid-column-gap: 2%;
+
+    div.sheet-personal_name_player {
+      grid-template-columns: 60px 180px 60px 120px;
+      grid-column-gap: 2%;
+
+    }
+    div.sheet-personal_culture_gender {
+      grid-template-columns: 60px 180px 60px 90px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_hand_height_weight {
+      grid-template-columns: 75px 60px 60px 60px 60px 60px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_profession_wealth {
+      grid-template-columns: 76px 180px 60px 60px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_gods_or_religion {
+      grid-template-columns: 120px 240px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_features {
+      grid-template-columns: 150px 210px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_description {
+      grid-template-columns: 120px 240px;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_full_length {
+      grid-template-columns: 100%;
+      grid-column-gap: 2%;      
+    }
+
+    div.sheet-personal_move_age {
+      grid-template-columns: 90px 90px 90px 90px;
+      grid-column-gap: 2%;      
+    }    
+  }
+}

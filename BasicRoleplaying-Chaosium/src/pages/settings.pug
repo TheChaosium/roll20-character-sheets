@@ -1,0 +1,10 @@
+.grid.settings
+  .col
+    h1(data-i18n='character sheet type')
+    select(name='attr_sheet_select' value='pc')
+      option(data-i18n='pc' value='pc' selected)
+      option(data-i18n='npc' value='npc')
+      option(data-i18n='vehicle' value='vehicle')
+
+  .col
+    include components/system-options
