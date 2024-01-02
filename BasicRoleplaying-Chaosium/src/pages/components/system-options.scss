@@ -1,0 +1,34 @@
+div.sheet-system-options {
+  grid-row-gap: 5px;
+
+  div.sheet-body {
+    grid-row-gap: 5px;
+    grid-auto-flow: row;
+    display: grid;
+    grid-column: 1;
+
+    div.sheet-subheader {
+      grid-column: 1/-1;
+    }
+  }
+
+  div.sheet-system-options-row {
+    grid-template-rows: repeat(10, 1fr);
+  }
+  
+  div.sheet-repeating-container {
+    div.sheet-row {
+      @extend %repeatingCheckboxRollRow;
+    }
+  }
+  
+}
+
+div.sheet-education-option.div.label.input:checked ~ .sheet-education {
+  display: block;
+}     
+
+
+
+
+

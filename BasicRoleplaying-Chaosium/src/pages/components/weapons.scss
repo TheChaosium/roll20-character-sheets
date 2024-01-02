@@ -1,0 +1,26 @@
+div.sheet-weapons {
+
+  div.sheet-core {
+      grid-auto-flow: column;
+      grid-column-gap: 2%;
+
+    div.sheet-weapons-title {
+      grid-template-columns: 20px 180px 60px 60px 60px 60px 60px 60px 60px 30px;
+      grid-column-gap: 2%;
+    }
+
+    div.sheet-weapons-fist-and-grapple {
+      grid-template-columns: 20px 180px 60px 60px 60px 60px 60px 60px 60px 30px 30px;
+      grid-column-gap: 2%;
+    }
+
+    div.sheet-repeating-container {
+      div.sheet-row {
+        grid-template-columns: 20px 180px 60px 60px 60px 60px 60px 60px 60px 30px;
+        grid-column-gap: 2%;
+      }
+    }       
+
+  }
+
+}

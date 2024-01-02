@@ -1,0 +1,28 @@
+div.sheet-characteristics {
+
+  div.sheet-core {
+    grid-auto-flow: column;
+    grid-column-gap: 2%;
+
+    div.sheet-characteristics {
+      grid-template-columns: 30px 45px 180px 45px;
+      grid-column-gap: 2%;
+    }
+
+    div.sheet-characteristics-pow {
+      grid-template-columns: 30px 45px 20px 160px 45px;
+      grid-column-gap: 2%;    
+        
+      div.sheet-bold {
+        padding: 100% 2%;
+      }      
+
+    }
+
+  }
+
+}
+
+div.sheet-education {
+  display: none;
+}    

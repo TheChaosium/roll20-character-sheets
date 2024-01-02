@@ -1,0 +1,44 @@
+input[name="attr_sheet_type"][value="vehicle"] ~ div.sheet-tabs {
+  margin-bottom: -3%;
+  width: 100%;
+}
+
+div.sheet-vehicle {
+  @import "./components/vehicle-attributes";
+  @import "./components/vehicle-hit-points";
+  
+  h2 {
+    text-overflow: ellipsis;
+    width: fit-content;
+  }
+  
+  textarea {
+    height: 50px;
+    margin-bottom: 0px;
+  }
+  
+  div.sheet-row,
+  div.sheet-col {
+    @extend %gridRowCol;
+  }
+  
+  div.sheet-mainheader {
+    grid-auto-flow: column;
+    grid-template-columns: min-content 1fr;
+
+    justify-content: center;
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    text-align: center;
+
+    h1 {
+      font-size: xx-large;
+      margin-top: .25em;
+    }
+  }
+
+  div.sheet-attributes-and-hit-points {
+    grid-template-columns: 2.5fr 1fr;    
+  }
+  
+}

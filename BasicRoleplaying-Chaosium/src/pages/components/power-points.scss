@@ -1,0 +1,17 @@
+div.sheet-power-points {
+
+  div.sheet-core {
+    grid-auto-flow: column;
+    grid-column-gap: 2%;
+
+    div.sheet-power_points {
+      grid-template-columns: 120px 45px;
+      grid-column-gap: 2%;
+
+      div.sheet-bold {
+        padding: 100% 2%;
+      }            
+    }      
+  }
+
+}

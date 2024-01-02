@@ -1,0 +1,20 @@
+.hit-points.grid
+    .header
+        h1(data-i18n='hit points')
+    .grid.core
+        .col
+            .row.hit_points
+                    +brpPersonalText('hit_points_max')
+                    +brpCharacteristicRollValue('hit_points_max')
+
+            .row.hit_points
+                    +brpPersonalText('hit_points_current')
+                    +numberInput('hit_points_current')
+
+            .row.hit_points
+                    +brpPersonalText('major_wound_level')
+                    +brpCharacteristicRollValue('major_wound_level')
+
+            .row.hit_points
+                    +brpPersonalText('has_major_would')
+                    +checkboxInput('has_major_wound')                    
